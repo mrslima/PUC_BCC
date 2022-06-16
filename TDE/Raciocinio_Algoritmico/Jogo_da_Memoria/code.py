@@ -262,7 +262,7 @@ while True:
     print(f"\n[Ajuda = {contador_exibir_resposta} restantes]")
     menu = opt_select(2)
     if menu == 1:
-        print(mat)
+#         print(mat)
         escolher_carta(mat, exibir_temp)
 
         if exibir_temp == mat:
