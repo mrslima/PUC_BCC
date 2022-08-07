@@ -16,5 +16,5 @@
   - [Resolução de Problemas de Natureza Discreta](https://github.com/mrslima/PUC_CC/tree/main/TDE/Resolucao_de_Problemas_de_Natureza_Discreta)
   - [Conectividade em Sistemas Ciberfísicos](https://github.com/mrslima/PUC_CC/tree/main/TDE/Conectividade_em_Sistemas_Ciberfisicos)
 - **Projetos**
-  - [Resolução de Problemas de Natureza Discreta](https://github.com/mrslima/PUC_CC/tree/main/Projetos/Resolucao_de_Problemas_de_Natureza_Discreta)
-  - [Conectividade em Sistemas Ciberfísicos](https://github.com/mrslima/PUC_CC/tree/main/Projetos/Conectividade_em_Sistemas_Ciberfisicos)
+  - [Resolução de Problemas de Natureza Discreta](https://github.com/mrslima/PUC_CC/tree/main/Projetos/RPND)
+  - [Conectividade em Sistemas Ciberfísicos](https://github.com/mrslima/PUC_CC/tree/main/Projetos/CSC)
