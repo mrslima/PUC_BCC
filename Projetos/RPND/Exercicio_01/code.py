@@ -4,7 +4,7 @@ Daniela dos Santos Lima
 Este programa tem por objetivo realizar operações de união, interseção, diferença e produto cartesiano, a partir da leitura de um arquivo de entrada.
 """
 
-file = open('../arquivo_01.txt', 'r')
+file = open('arquivo_01.txt', 'r')
 lines = file.readlines()
 
 
@@ -87,7 +87,7 @@ def f_cartesian_product(line_x, line_y):
 
 
 for line in range(1, len(lines), 3):
-    lines[line] = str(lines[line]).strip()
+    lines[line] = lines[line].strip()
 
     if lines[line].upper() == "U":
         f_union(lines[line + 1], lines[line + 2])
