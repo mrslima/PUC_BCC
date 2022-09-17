@@ -6,7 +6,11 @@
   - Como o computador entende números e não cores, cada pixel é salvo no computador como um valor que corresponde a intensidade de cor presente nele. (0 - totalmente preto, 255 - totalmente branco | para imagens coloridas utiliza-se a mesma lógica, mas para o sistema RGB)
 ----
 
-####  Produza um código que carregue uma imagem do disco, desenhe um retangulo em qualquer posição e exiba na tela.
+###  Produza um código que carregue uma imagem do disco, desenhe um retangulo em qualquer posição e exiba na tela.
+
+#### Código
+
+- [Arquivo Jupyter Notebook (.ipynb)](https://github.com/mrslima/PUC_BCC/blob/main/opencv/jupyter-code.ipynb)
 
 ```python
 #!/usr/bin/python
@@ -31,3 +35,5 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 ```
+
+#### Resultados
