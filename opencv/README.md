@@ -8,17 +8,26 @@
 
 ####  Produza um código que carregue uma imagem do disco, desenhe um retangulo em qualquer posição e exiba na tela.
 
-```c
-#include <stdio.h>
+```python
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 
-enum Cores_do_semaforo { VERMELHO, VERDE, AMARELO };
+"""
+DEPENDENCIES
 
-int main()
-{
-    enum Cores_do_semaforo s1 = VERDE; // cor do semáforo primário
+pip install opencv-python
+pip install matplotlib
+"""
 
-    printf("enum: %lu\n", sizeof(s1));
+import cv2
+import matplotlib.pyplot as plt
 
-    return 0;
-}
+image = cv2.imread('img_gray.jpg')
+cv2.imshow('Original Image | PRESSIONE ALGUMA TECLA PARA PROSSEGUIR', image)
+cv2.waitKey(0)
+image = cv2.rectangle(image, (265, 70), (360, 160), (0, 0, 255), 2)
+cv2.imshow('Modified Image | PRESSIONE ALGUMA TECLA PARA FECHAR TUDO', image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
 ```
