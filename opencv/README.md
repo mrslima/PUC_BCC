@@ -8,7 +8,7 @@
 
 ####  Produza um código que carregue uma imagem do disco, desenhe um retangulo em qualquer posição e exiba na tela.
 
-```
+```c
 #include <stdio.h>
 
 enum Cores_do_semaforo { VERMELHO, VERDE, AMARELO };
