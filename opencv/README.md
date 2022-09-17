@@ -37,3 +37,5 @@ cv2.destroyAllWindows()
 ```
 
 #### Resultados
+![img_01](img_01.png)
+![img_01](img_02.png)
