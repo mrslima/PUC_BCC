@@ -3,7 +3,7 @@
 - **Como uma imagem é representada no computador? Matriz, Vetor?**
   - answers...
 - **O que é um pixel e o que representa os valores de 0 a 255?**
-
+  - answers...
 ----
 
 ####  Produza um código que carregue uma imagem do disco, desenhe um retangulo em qualquer posição e exiba na tela.
