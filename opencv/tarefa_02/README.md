@@ -43,3 +43,61 @@ Width * Height = # of pixels
 - **What is the difference between RGB and HSV color systems?**
     - **RGB Colorspace** is a three dimensional model, consist of three primary colors, and based on the combination of these colors you are able to generate any other possible color.
     - **HSV Colorspace** is composed three components, Hue, Saturation and Value. In simple terms, Hue represents the actual pure color perceived by our eyes, Saturation is the colorfulness of that pure color (i.e decreasing Saturation reduces the colorfulness from the color itself), Value is the intensity of the color, correlates with the its darkness.
+- **How to view each channel of the color image?**
+```python
+# Matriz
+img = cv2.imread('image.jpg')
+b = img[:,:,0]
+g = img[:,:,1]
+r = img[:,:,2]
+print(f'Blue:\n{b}\nG:\n{g}\nR:{r}')
+
+
+# Visual (Splitting Channels)
+import cv2
+import argparse
+import numpy as np
+
+ap = argparse.ArgumentParser()
+ap.add_argument("-i", "--image", type=str, default="opencv_logo.png", help="path to the input image")
+args = vars(ap.parse_args())
+
+image = cv2.imread(args["image"])
+(B, G, R) = cv2.split(image)
+
+cv2.imshow("Red", R)
+cv2.imshow("Green", G)
+cv2.imshow("Blue", B)
+cv2.waitKey(0)
+```
+- **When do you split each color channel, how its look like? Gray, Colored? Why?**
+  - The resulting are grayscale images. Very often, one of the channels (as a rule, the Green one) proves to contain the most detail of the source image, the second (usually, the Red) channel provides the contrast map, while the third (Blue) channel is responsible for the noise.
+- **How to draw and put text on an image?**
+```python
+import cv2
+import matplotlib.pyplot as plt
+
+
+image = cv2.imread('dino.png')
+
+# font
+font = cv2.FONT_HERSHEY_SIMPLEX
+
+# org - coordinates of the bottom-left corner
+org = (50, 50)
+
+# fontScale
+fontScale = 1
+
+# Blue color in BGR
+color = (255, 0, 0)
+
+# Line thickness of 2 px
+thickness = 2
+
+# Using cv2.putText() method
+image = cv2.putText(image, 'OpenCV', org, font, fontScale, color, thickness, cv2.LINE_AA, False)
+
+# Displaying the image
+plt.imshow(image)
+```
