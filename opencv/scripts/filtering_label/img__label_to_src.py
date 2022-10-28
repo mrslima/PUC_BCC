@@ -10,8 +10,7 @@ label_color = label_grayscale.copy()
 # GRAYSCALE
 for key_lvl1, value_lvl1 in enumerate(label_grayscale):
     for key_lvl2, value_lvl2 in enumerate(value_lvl1):
-        for key_lvl3, value_lvl3 in enumerate(value_lvl2):
-            label_grayscale[key_lvl1][key_lvl2][key_lvl3] *= 100
+        label_grayscale[key_lvl1][key_lvl2] *= 100
 
 # COLORFUL
 for key_lvl1, value_lvl1 in enumerate(label_color):
