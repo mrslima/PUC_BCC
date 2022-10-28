@@ -25,6 +25,7 @@ for key_lvl1, value_lvl1 in enumerate(label_color):
         elif str(label_color[key_lvl1][key_lvl2]) == '[4 4 4]':
             label_color[key_lvl1][key_lvl2] = np.array([255, 255, 0])
 
+# BLEND
 resultado = cv2.addWeighted(image, 0.3, label_color, 1, 0.0)
 
 # DISPLAYING
