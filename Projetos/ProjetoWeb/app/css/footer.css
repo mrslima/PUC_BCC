@@ -1,0 +1,41 @@
+@import url(general.css);
+
+.footer {
+    display: flex;
+    height: 30vh;
+    background: var(--color-primary);
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footer__container {
+    width: 30vw;
+    display: block;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer__container-logo {
+    width: 50%;
+}
+
+.footer__container-socials {
+    justify-content: center;
+    /* background-color: blue; */
+    display: flex;
+    padding: 1rem;  
+}
+
+.footer__container-socials > a {
+    /* width: 10vw; */
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}

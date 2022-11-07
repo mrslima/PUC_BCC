@@ -1,0 +1,116 @@
+@import url(general.css);
+
+
+.announce-bar {
+    display: block;
+    background-color: var(--color-primary);
+    text-align: center;
+    margin: 0;
+    padding: 0; 
+    min-height: 2vh;
+    height: 2.5vh;
+    max-height: 3vh;
+}
+
+.announce-bar a {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    color: black;
+}
+
+nav {
+    display: flex;
+    padding: 10px 10%;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    height: 9vh;
+    max-height: 9vh;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.icon {
+    transition: all 0.1s ease 0s;
+    z-index: 2;
+}
+
+.icon:hover {
+    color: var(--color-secondary);
+}
+
+#pvs_logo {
+    height: 95px;
+    padding: 0;
+    /* margin: auto; */
+    width: 10vh 25vw;
+}
+
+.nav-links li{
+    margin: auto;
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 1.2rem;
+}
+
+.nav-links-txt-active {
+    display: none;
+}
+
+.nav-links a {
+    color: black;
+}
+/* 
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 5px;
+    cursor: pointer;
+} */
+
+.icon .tooltip {
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    display: block;
+    margin: 0;
+    background-color: var(--color-light-gray);
+    padding: 5px 0px 5px 0px;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0, 0.2);
+    pointer-events: none;
+    opacity: 0;
+    transition:  all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border: 1px solid black;
+}
+
+.icon:hover .tooltip {
+    top: 100px;
+    opacity: 1;
+    pointer-events: auto;
+    color: black;
+    
+}
+
+.span__title {
+    background-color: var(--color-secondary);
+    padding: 5px 5px 5px 10px;
+    border-right: 1px solid black;
+}
+
+.span__content {
+    padding: 5px 10px 5px 5px;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
